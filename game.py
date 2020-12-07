@@ -71,6 +71,6 @@ game.construct_tree(6)
 print game.check_win()
 game.construct_tree(8)
 print game.check_win()
-print game.tree
+# print game.tree
 
 

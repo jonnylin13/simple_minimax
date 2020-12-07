@@ -18,13 +18,13 @@ class Tree(object):
     def __init__(self, root):
         self.root = root # of type Node
 
-    def __str__(self):
-        output = []
-        for (child in self.children):
+    # def __str__(self):
+    #     output = []
+    #     for (child in self.children):
 
-            output.append(', '.join(str(child.score)))
+    #         output.append(', '.join(str(child.score)))
 
-            if (len(child.children) > 0):
-                for (grandchild in child.children):
-                    output.append(', '.join(str(grandchild.score) for child in self.root.children) + '\n')
-        return ', '.join(str(child.score) for child in self.root.children)
+    #         if (len(child.children) > 0):
+    #             for (grandchild in child.children):
+    #                 output.append(', '.join(str(grandchild.score) for child in self.root.children) + '\n')
+    #     return ', '.join(str(child.score) for child in self.root.children)
