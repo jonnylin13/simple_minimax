@@ -1,6 +1,3 @@
-
-'''
-
 # Background
 ## Description
 * Minimax algorithm - decision algorithm typically used in 2-player turn based games
