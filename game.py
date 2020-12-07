@@ -41,10 +41,10 @@ class Bones(Minimax):
 
     # Recursively constructs tree
     def __construct_tree(self, parent_node):
-        potential_heaps = self.get_possible_states(parent_node.num_bones)
+        potential_num_bones = self.get_possible_states(parent_node.num_bones)
         is_child_max_player = not parent_node.is_max_player
-        for heap in potential_heaps:
-            new_node = BonesNode(heap, is_child_max_player)
+        for num_bones in potential_num_bones:
+            new_node = BonesNode(num_bones, is_child_max_player)
             parent_node.add_child(new_node)
             if new_node.num_bones > 0:
                 self.__construct_tree(new_node)
